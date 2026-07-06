@@ -22,7 +22,7 @@ with open("pickle/model.pkl", "rb") as f:
 
 app = Flask(__name__)
 
-CORS(app, origins=["https://threatscan-sand.vercel.app/"])
+CORS(app, origins=["https://threatscan-sand.vercel.app"])
 
 VIRUSTOTAL_API_KEY = os.environ.get("VIRUSTOTAL_API_KEY")
 if not VIRUSTOTAL_API_KEY:
